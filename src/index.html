@@ -1,0 +1,41 @@
+<body>
+    <header>
+        <h1 class="primary-heading">Pomodoro clock</h1>
+    </header>
+
+    <section class="app-body">
+		<div class="timer">
+			<p class="timer__name">pomodoro</p>
+			<p class="timer__time">88:88</p>
+			<audio class="timer__sound" src="audio/bell.mp3"></audio>
+			<div class="timer__controls">
+				<button type="button" class="button start-button "><span class="fa fa-play"></span> Start</button>
+				<button type="button" class="button stop-button "><span class="fa fa-pause"></span> Stop</button>
+				<button type="button" class="button reset-button "><span class="fa fa-stop"></span> Reset</button>
+				<br>
+				<button type="button" class="button plus-button ">+ 1 minute</button>
+				<button type="button" class="button minus-button ">- 1 minute</button>
+			</div>
+		</div>
+		<p class="timers-list__title">
+			Pick a timer:
+		</p>
+		<ul class="timers-list">
+		</ul>
+    </section>
+
+    <footer class="primary-footer">
+        <a href="//wiktorczajkowski.xyz/">Wiktor Czajkowski</a> &copy; 2016. All rights reserved.
+		<br>
+		Sound effects from <a href="//www.freesfx.co.uk/">https://www.freesfx.co.uk/</a>.
+    </footer>
+
+    <!-- build:css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- endbuild -->
+    <!-- build:js -->
+    <script src="script.js"></script>
+    <!-- endbuild -->
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</body>
