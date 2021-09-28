@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   id="svg3390"
+   height="141.25"
+   viewBox="0 0 138.75 141.25"
+   width="138.75"
+   version="1.1"
+   sodipodi:docname="File Rotten_Tomatoes.svg"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs11" />
+  <sodipodi:namedview
+     id="namedview9"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="2.980531"
+     inkscape:cx="59.217637"
+     inkscape:cy="75.65766"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg3390" />
+  <metadata
+     id="metadata3396">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer2"
+     transform="translate(5.3925801,0.57505938)">
+    <g
+       id="g9155">
+      <path
+         id="path3412"
+         d="m 25.278087,40.660538 c -28.1489994,27.622 -13.656999,61.011002 -5.734,71.931002 35.254,41.954 92.792003,25.339 111.889993,-5.9071 4.7608,-8.2027 22.554,-53.467002 -23.97599,-78.009002 z"
+         style="fill:#f93208;fill-opacity:1"
+         transform="translate(-8.747687,0.095962)" />
+      <path
+         id="path3437"
+         d="m 39.436,8.5696 8.9682,-5.2826 6.7569,15.479 c 3.7925,-6.3226 13.79,-16.316 24.939,-4.6684 -4.7281,1.2636 -7.5161,3.8553 -7.7397,8.4768 15.145,-4.1697 31.343,3.2127 33.539,9.0911 -10.951,-4.314 -27.695,10.377 -41.771,2.334 0.009,15.045 -12.617,16.636 -19.902,17.076 2.077,-4.996 5.591,-9.994 1.474,-14.987 -7.618,8.171 -13.874,10.668 -33.17,4.668 4.876,-1.679 14.843,-11.39 24.448,-11.425 -6.775,-2.467 -12.29,-2.087 -17.814,-1.475 2.917,-3.961 12.149,-15.197 28.625,-8.476 z"
+         fill="#02902e" />
+    </g>
+  </g>
+  <rect
+     style="fill:#000000;fill-opacity:1;stroke-width:0.623267"
+     id="rect9179"
+     width="2.6840856"
+     height="33.886581"
+     x="66.095604"
+     y="49.991096" />
+  <rect
+     style="fill:#000000;fill-opacity:1;stroke-width:0.757019"
+     id="rect9179-8"
+     width="2.6840856"
+     height="49.991093"
+     x="13.256078"
+     y="-155.58467"
+     transform="rotate(133.17747)" />
+</svg>
