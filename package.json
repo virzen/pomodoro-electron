@@ -1,7 +1,7 @@
 {
   "name": "pomodoro-electron-forge",
-  "productName": "pomodoro-electron-forge",
-  "version": "1.0.0",
+  "productName": "Pomodoro",
+  "version": "0.0.1",
   "description": "My Electron application description",
   "main": "src/index.js",
   "scripts": {
@@ -19,7 +19,9 @@
   "license": "MIT",
   "config": {
     "forge": {
-      "packagerConfig": {},
+      "packagerConfig": {
+        "icon": "assets/logo.ico"
+      },
       "makers": [
         {
           "name": "@electron-forge/maker-squirrel",
