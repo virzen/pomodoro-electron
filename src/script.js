@@ -343,7 +343,7 @@
 			// its data-timer-id as timer's id
 			elems.timers.forEach(timer => {
 				timer.addEventListener('click', ev => {
-					setCurrentTimer(ev.target.dataset.timerId, renderMainTimer);
+					setCurrentTimer(ev.currentTarget.dataset.timerId, renderMainTimer);
 				});
 			});
 		};
