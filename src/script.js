@@ -203,6 +203,9 @@
 			}
 		};
 
+		const serialize = () => {
+			return { name, duration };
+		}
 
 		// Assign public methods to the new object
 		that = {
@@ -223,11 +226,39 @@
 		that.stop = stopTimer;
 		that.reset = resetTimer;
 		that.changeDurationBy = changeDurationBy;
+		that.serialize = serialize;
 
 
 		// Return the new object
 		return that;
 	};
+
+
+	const localStorageKey = 'pomodoro-electron-timers'
+
+	function readTimers() {
+		const saved = window.localStorage.getItem(localStorageKey)
+		return saved && JSON.parse(saved)
+	}
+
+	function saveTimers(timers) {
+		return window.localStorage.setItem(localStorageKey, JSON.stringify(timers))
+	}
+
+	const defaultTimers = [
+		{
+			name: 'pomodoro',
+			duration: [25, 0]
+		},
+		{
+			name: 'short break',
+			duration: [5, 0]
+		},
+		{
+			name: 'long break',
+			duration: [20, 0]
+		}
+	]
 
 
 	// application's singleton
@@ -237,20 +268,7 @@
 		// It might be fetched through ajax or localStorage, so it should be
 		// JSON compatible (e. g. no methods)
 		const data = {
-			timers: [
-				{
-					name: 'pomodoro',
-					duration: [25, 0]
-				},
-				{
-					name: 'short break',
-					duration: [5, 0]
-				},
-				{
-					name: 'long break',
-					duration: [20, 0]
-				}
-			],
+			timers: readTimers() || defaultTimers,
 		};
 
 		// State contains application-specific version of the data
@@ -354,6 +372,10 @@
 			elems.mainTimer.sound.play();
 		};
 
+		const getSerializedTimers = () => {
+			return state.timers.map(t => t.serialize());
+		}
+
 
 		const init = function () {
 			// initialize state
@@ -386,6 +408,7 @@
 				currentTimer.reset();
 				renderMainTimer();
 				renderTimersList();
+				saveTimers(getSerializedTimers());
 			});
 			elems.buttons.minus.addEventListener('click', () => {
 				const currentTimer = state.timers[state.currentTimerId];
@@ -393,6 +416,7 @@
 				currentTimer.reset();
 				renderMainTimer();
 				renderTimersList();
+				saveTimers(getSerializedTimers());
 			});
 
 			// set default timer as current one and trigger initial rendering
